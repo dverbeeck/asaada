@@ -1,0 +1,563 @@
+[global_config]
+  extra_styling = False
+  broadcast_default = off
+  scroll_tabbar = True
+  use_custom_url_handler = True
+  custom_url_handler = firefox --new-tab
+  inactive_color_offset = 0.75
+  inactive_bg_color_offset = 0.7638888888888888
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, CurrDirOpen, Logger, RunCmdOnMatchMenu, TestPlugin, InsertTermName, MavenPluginURLHandler, CustomCommandsMenu, ActivityWatch, InactivityWatch, SaveLastSessionLayout, TerminalShot
+  link_single_click = True
+[keybindings]
+  page_up = Page_Up
+  page_down = Page_Down
+  line_up = <Primary>y
+  line_down = <Primary>z
+  move_tab_right = <Alt>bracketright
+  move_tab_left = <Alt>bracketleft
+  next_tab = <Primary><Alt>bracketright
+  prev_tab = <Primary><Alt>bracketleft
+  ungroup_win = <Primary><Shift>greater
+  ungroup_tab = <Primary><Shift>question
+  new_window = <Primary>n
+  new_terminator = ""
+  preferences = <Primary>p
+[profiles]
+  [[default]]
+    urgent_bell = True
+    background_darkness = 0.95
+    cursor_shape = ibeam
+    font = Roboto Mono Light for Powerline Light 10
+    foreground_color = "#ffffff"
+    scrollback_infinite = True
+    palette = "#1f2229:#d41919:#5ebdab:#fea44c:#367bf0:#9755b3:#49aee6:#e6e6e6:#198388:#ec0101:#47d4b9:#ff8a18:#277fff:#962ac3:#05a1f7:#ffffff"
+    use_system_font = False
+    title_hide_sizetext = True
+    title_use_system_font = False
+    title_font = Terminus Bold 9
+  [[secondary objectives]]
+    visible_bell = True
+    urgent_bell = True
+    cursor_blink = False
+    scrollbar_position = left
+    title_hide_sizetext = True
+    title_use_system_font = False
+    title_font = Special Elite Bold 9
+  [[tertiary shiznoz]]
+    background_color = "#ffffff"
+    cursor_shape = ibeam
+    font = Latin Modern Mono Light Cond 10
+    foreground_color = "#000000"
+    scroll_on_keystroke = False
+    scroll_on_output = True
+    scrollback_infinite = True
+    exit_action = restart
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+    bold_is_bright = True
+    title_hide_sizetext = True
+    title_use_system_font = False
+    title_font = VL Gothic Bold 9
+[layouts]
+  [[default]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 1:1
+      maximised = True
+      fullscreen = False
+      size = 1918, 1063
+      title = nixon@sandbender:~
+      last_active_term = 4479bb31-9f20-40e9-8e65-1fd061cc012e
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 705
+      ratio = 0.666351606805293
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 4479bb31-9f20-40e9-8e65-1fd061cc012e
+    [[[child3]]]
+      type = HPaned
+      parent = child1
+      order = 1
+      position = 954
+      ratio = 0.4986931521170936
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = secondary objectives
+      uuid = 295c5501-aa41-4c07-8f1d-27189f8cb5e1
+    [[[terminal5]]]
+      type = Terminal
+      parent = child3
+      order = 1
+      profile = secondary objectives
+      uuid = 66cef659-43bf-4ac5-82b6-f6f19bb1c1c2
+  [[oth]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:0
+      maximised = True
+      fullscreen = False
+      size = 1824, 1109
+      title = nixon@sandbender:~
+      last_active_term = 3876c378-380a-4bc7-be99-d2b488e8cd21
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 910
+      ratio = 0.5002748763056625
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 3876c378-380a-4bc7-be99-d2b488e8cd21
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 552
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 4479bb31-9f20-40e9-8e65-1fd061cc012e
+    [[[child5]]]
+      type = VPaned
+      parent = child3
+      order = 1
+      position = 276
+      ratio = 0.5009074410163339
+    [[[terminal6]]]
+      type = Terminal
+      parent = child5
+      order = 0
+      profile = default
+      uuid = 81197347-ff68-460b-a440-3c5af519069e
+    [[[child7]]]
+      type = HPaned
+      parent = child5
+      order = 1
+      position = 454
+      ratio = 0.5
+    [[[terminal8]]]
+      type = Terminal
+      parent = child7
+      order = 0
+      profile = tertiary shiznoz
+      uuid = 295c5501-aa41-4c07-8f1d-27189f8cb5e1
+    [[[child9]]]
+      type = VPaned
+      parent = child7
+      order = 1
+      position = 137
+      ratio = 0.5
+    [[[terminal10]]]
+      type = Terminal
+      parent = child9
+      order = 0
+      profile = secondary objectives
+      uuid = 66cef659-43bf-4ac5-82b6-f6f19bb1c1c2
+    [[[terminal11]]]
+      type = Terminal
+      parent = child9
+      order = 1
+      profile = secondary objectives
+      uuid = 75d07a6e-662e-4b27-a9bf-30f373ba7d77
+  [[yeeeeeee eeeeee]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:477
+      maximised = False
+      fullscreen = False
+      size = 654, 453
+      title = nixon@sandbender:~
+      last_active_term = 3876c378-380a-4bc7-be99-d2b488e8cd21
+      last_active_window = False
+    [[[terminal1]]]
+      type = Terminal
+      parent = child0
+      order = 0
+      profile = default
+      uuid = 3876c378-380a-4bc7-be99-d2b488e8cd21
+    [[[child2]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 656:477
+      maximised = False
+      fullscreen = False
+      size = 654, 453
+      title = nixon@sandbender:~
+      last_active_term = 2cdcc4a9-758b-4f43-9ab2-86e0a5242feb
+      last_active_window = True
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = default
+      uuid = 2cdcc4a9-758b-4f43-9ab2-86e0a5242feb
+  [[New Layout]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:477
+      maximised = False
+      fullscreen = False
+      size = 654, 453
+      title = nixon@sandbender:~
+      last_active_term = 3876c378-380a-4bc7-be99-d2b488e8cd21
+      last_active_window = True
+    [[[terminal1]]]
+      type = Terminal
+      parent = child0
+      order = 0
+      profile = default
+      uuid = 3876c378-380a-4bc7-be99-d2b488e8cd21
+    [[[child2]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 656:477
+      maximised = False
+      fullscreen = False
+      size = 654, 453
+      title = nixon@sandbender:~
+      last_active_term = 2cdcc4a9-758b-4f43-9ab2-86e0a5242feb
+      last_active_window = False
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = default
+      uuid = 2cdcc4a9-758b-4f43-9ab2-86e0a5242feb
+  [[smth]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:0
+      maximised = True
+      fullscreen = False
+      size = 1824, 1109
+      title = nixon@sandbender:~
+      last_active_term = 3876c378-380a-4bc7-be99-d2b488e8cd21
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 910
+      ratio = 0.5002748763056625
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 3876c378-380a-4bc7-be99-d2b488e8cd21
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 552
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 4479bb31-9f20-40e9-8e65-1fd061cc012e
+    [[[child5]]]
+      type = VPaned
+      parent = child3
+      order = 1
+      position = 276
+      ratio = 0.5009074410163339
+    [[[terminal6]]]
+      type = Terminal
+      parent = child5
+      order = 0
+      profile = default
+      uuid = 81197347-ff68-460b-a440-3c5af519069e
+    [[[child7]]]
+      type = HPaned
+      parent = child5
+      order = 1
+      position = 454
+      ratio = 0.5
+    [[[terminal8]]]
+      type = Terminal
+      parent = child7
+      order = 0
+      profile = tertiary shiznoz
+      uuid = 295c5501-aa41-4c07-8f1d-27189f8cb5e1
+    [[[child9]]]
+      type = VPaned
+      parent = child7
+      order = 1
+      position = 137
+      ratio = 0.5
+    [[[terminal10]]]
+      type = Terminal
+      parent = child9
+      order = 0
+      profile = secondary objectives
+      uuid = 66cef659-43bf-4ac5-82b6-f6f19bb1c1c2
+    [[[terminal11]]]
+      type = Terminal
+      parent = child9
+      order = 1
+      profile = secondary objectives
+      uuid = 75d07a6e-662e-4b27-a9bf-30f373ba7d77
+  [[New Layout 1]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 2:2
+      maximised = True
+      fullscreen = False
+      size = 1918, 1052
+      title = nixon@sandbender:~
+      last_active_term = 4479bb31-9f20-40e9-8e65-1fd061cc012e
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 524
+      ratio = 0.5004775549188156
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 4479bb31-9f20-40e9-8e65-1fd061cc012e
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 261
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 81197347-ff68-460b-a440-3c5af519069e
+    [[[child5]]]
+      type = HPaned
+      parent = child3
+      order = 1
+      position = 954
+      ratio = 0.4986931521170936
+    [[[terminal6]]]
+      type = Terminal
+      parent = child5
+      order = 0
+      profile = tertiary shiznoz
+      uuid = 295c5501-aa41-4c07-8f1d-27189f8cb5e1
+    [[[child7]]]
+      type = VPaned
+      parent = child5
+      order = 1
+      position = 130
+      ratio = 0.5
+    [[[terminal8]]]
+      type = Terminal
+      parent = child7
+      order = 0
+      profile = secondary objectives
+      uuid = 66cef659-43bf-4ac5-82b6-f6f19bb1c1c2
+    [[[terminal9]]]
+      type = Terminal
+      parent = child7
+      order = 1
+      profile = secondary objectives
+      uuid = 75d07a6e-662e-4b27-a9bf-30f373ba7d77
+  [[New Layout 2]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 2:2
+      maximised = True
+      fullscreen = False
+      size = 1918, 1052
+      title = nixon@sandbender:~
+      last_active_term = 4479bb31-9f20-40e9-8e65-1fd061cc012e
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 524
+      ratio = 0.5004775549188156
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 4479bb31-9f20-40e9-8e65-1fd061cc012e
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 261
+      ratio = 0.5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 81197347-ff68-460b-a440-3c5af519069e
+    [[[child5]]]
+      type = HPaned
+      parent = child3
+      order = 1
+      position = 954
+      ratio = 0.4986931521170936
+    [[[terminal6]]]
+      type = Terminal
+      parent = child5
+      order = 0
+      profile = tertiary shiznoz
+      uuid = 295c5501-aa41-4c07-8f1d-27189f8cb5e1
+    [[[child7]]]
+      type = VPaned
+      parent = child5
+      order = 1
+      position = 130
+      ratio = 0.5
+    [[[terminal8]]]
+      type = Terminal
+      parent = child7
+      order = 0
+      profile = secondary objectives
+      uuid = 66cef659-43bf-4ac5-82b6-f6f19bb1c1c2
+    [[[terminal9]]]
+      type = Terminal
+      parent = child7
+      order = 1
+      profile = secondary objectives
+      uuid = 75d07a6e-662e-4b27-a9bf-30f373ba7d77
+  [[jhdiosada]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:0
+      maximised = True
+      fullscreen = False
+      size = 1, 62
+      title = nixon@sandbender:~
+      last_active_term = 3876c378-380a-4bc7-be99-d2b488e8cd21
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 3876c378-380a-4bc7-be99-d2b488e8cd21
+      directory = /home/styroteqe
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 526
+      ratio = 0.5004757373929591
+    [[[terminal4]]]
+      type = Terminal
+      parent = child3
+      order = 0
+      profile = default
+      uuid = 4479bb31-9f20-40e9-8e65-1fd061cc012e
+      directory = /home/styroteqe
+    [[[child5]]]
+      type = VPaned
+      parent = child3
+      order = 1
+      position = 262
+      ratio = 0.5
+    [[[terminal6]]]
+      type = Terminal
+      parent = child5
+      order = 0
+      profile = default
+      uuid = 81197347-ff68-460b-a440-3c5af519069e
+      directory = /home/styroteqe
+    [[[child7]]]
+      type = HPaned
+      parent = child5
+      order = 1
+      position = 478
+      ratio = 0.5
+    [[[terminal8]]]
+      type = Terminal
+      parent = child7
+      order = 0
+      profile = tertiary shiznoz
+      uuid = 295c5501-aa41-4c07-8f1d-27189f8cb5e1
+      directory = /home/styroteqe
+    [[[child9]]]
+      type = VPaned
+      parent = child7
+      order = 1
+      position = 130
+      ratio = 0.49808429118773945
+    [[[terminal10]]]
+      type = Terminal
+      parent = child9
+      order = 0
+      profile = secondary objectives
+      uuid = 66cef659-43bf-4ac5-82b6-f6f19bb1c1c2
+      directory = /home/styroteqe
+    [[[terminal11]]]
+      type = Terminal
+      parent = child9
+      order = 1
+      profile = secondary objectives
+      uuid = 75d07a6e-662e-4b27-a9bf-30f373ba7d77
+      directory = /home/styroteqe
+  [[SaveLastSessionLayout]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:0
+      maximised = True
+      fullscreen = False
+      size = 1, 1
+      title = nixon@sandbender:~
+      last_active_window = True
+    [[[child1]]]
+      type = HPaned
+      parent = child0
+      order = 0
+      position = 953
+      ratio = 0.4986917844060701
+[plugins]
